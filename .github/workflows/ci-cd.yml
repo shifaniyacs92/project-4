@@ -28,6 +28,7 @@ jobs:
 
     - name: Run tests
       run: |
+        cd app
         pytest tests/
 
     - name: Log in to Docker Hub
