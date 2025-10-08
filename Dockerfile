@@ -10,10 +10,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app code
 COPY app ./app
-COPY tests ./tests
+COPY app/tests ./app/tests
 
 # Expose port
 EXPOSE 5000
 
 # Default command
-CMD ["python", "app/main.py"]
+CMD ["python", "app/app.py"]
