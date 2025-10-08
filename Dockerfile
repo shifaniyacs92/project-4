@@ -5,12 +5,12 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy dependencies
-COPY requirements.txt ./
+COPY app/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app code
-COPY app ./app
-COPY app/tests ./app/tests
+COPY app ./
+COPY app/tests ./tests
 
 # Expose port
 EXPOSE 5000
