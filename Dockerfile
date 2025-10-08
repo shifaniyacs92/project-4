@@ -16,4 +16,4 @@ COPY app/tests ./tests
 EXPOSE 5000
 
 # Default command
-CMD ["python", "app/app.py"]
+CMD ["python", "app.py"]
