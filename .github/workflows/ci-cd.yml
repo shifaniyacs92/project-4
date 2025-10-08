@@ -44,4 +44,4 @@ jobs:
         tags: ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
 
     - name: Image digest (for reference)
-      run: echo "Image pushed: ${{ secrets.DOCKER_USERNAME }}/flask-app:latest"
+      run: echo "Image pushed:" ${{ secrets.DOCKER_USERNAME }}"/flask-app:latest"
